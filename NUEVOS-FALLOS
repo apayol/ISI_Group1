@@ -7,3 +7,5 @@ NUEVOS-FALLOS
 	1) Faltaba definir que si tienen más de 3 letras iguales diera fallo.
 	2) Faltaba definir que letras no son válidas
 	3) RomanNumeralTest, he simplificado el código
+
+·Black Friday: No consideramos que haya nada que mejorar. Se pasa un test en el caso de que el precio sea negativo, se comprueba el precio cuando es Black Friday y cuando no lo es. Opinamos que no hay ningún factor más por comprobar.
