@@ -50,10 +50,10 @@ public class RomanNumeral
                         ant = valor[j];                		 // valor anterior = valor letra actual
                    }else {  
 					   if (suma == 4 && ((letra == Rom[1]) || (letra == Rom[3]) || (letra == Rom[5]))){
-							throw new ClassCastException("RomanNumeral.convierte");
+							throw new RuntimeException("RomanNumeral.convierte");
 						}
 						if (suma == 2 && ((letra == Rom[2]) || (letra == Rom[4]) || (letra == Rom[6]))){
-							throw new ClassCastException("RomanNumeral.convierte");
+							throw new RuntimeException("RomanNumeral.convierte");
 						}                          		 //si no se cumple lo anterior  
                         ant = valor[j];                      //el dato actual se guarda en anterior
                    }              
