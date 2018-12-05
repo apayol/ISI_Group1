@@ -1,3 +1,9 @@
 NUEVOS-FALLOS
 -------------
 ·Bisiestos: No hemos encontrado nada que mejorar, ya que pasan los mismos tests que nosotros hemos encontrado necesarios.
+
+
+·RomanNumeral:
+	1) Faltaba definir que si tienen más de 3 letras iguales diera fallo.
+	2) Faltaba definir que letras no son válidas
+	3) RomanNumeralTest, he simplificado el código

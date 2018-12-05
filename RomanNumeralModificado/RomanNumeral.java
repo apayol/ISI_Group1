@@ -48,7 +48,13 @@ public class RomanNumeral
                  	if( ant < valor[j]){                     //si el valor de letra anterior menor a valor letra   //actual
                     	suma = suma - ant*2 ;                // restale el doble del menor de los dos
                         ant = valor[j];                		 // valor anterior = valor letra actual
-                   }else {                            		 //si no se cumple lo anterior  
+                   }else {  
+					   if (suma == 4 && ((letra == Rom[1]) || (letra == Rom[3]) || (letra == Rom[5]))){
+							throw new ClassCastException("RomanNumeral.convierte");
+						}
+						if (suma == 2 && ((letra == Rom[2]) || (letra == Rom[4]) || (letra == Rom[6]))){
+							throw new ClassCastException("RomanNumeral.convierte");
+						}                          		 //si no se cumple lo anterior  
                         ant = valor[j];                      //el dato actual se guarda en anterior
                    }              
                 }
